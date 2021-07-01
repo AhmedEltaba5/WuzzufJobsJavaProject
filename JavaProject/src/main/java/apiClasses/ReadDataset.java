@@ -33,7 +33,7 @@ public class ReadDataset {
         List<Job> jobs = jobDOAObj.readJobsFromCSV();
         String title = jobs.get(1).getTitle();
         return title;
-        
+        /*
         Dataset<Job> df = spark.createDataFrame(Jobs);
                 
         //Convert it to RDD
@@ -41,7 +41,7 @@ public class ReadDataset {
         //Convert it to dataset
 
         sparkSession.createDataFrame(rdd, StringWrapper.class).show(false);
-
+        */
 
     }
     
